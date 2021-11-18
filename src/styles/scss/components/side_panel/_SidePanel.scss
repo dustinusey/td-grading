@@ -1,0 +1,9 @@
+.side-panel {
+    max-width: $panel-size;
+    background: $main-accent;
+    overflow: auto;
+    @include flex(column, nowrap, flex-start, center);
+    .side-panel-child {
+        width: 100%;
+    }
+}

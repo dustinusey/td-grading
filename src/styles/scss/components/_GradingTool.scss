@@ -1,0 +1,8 @@
+.grading-tool {
+    height: 100vh;
+    @include flex(row, nowrap, center, center);
+    .side-panel, .grading-ui {
+        height: 100%;
+        width: 100%;
+    }
+}

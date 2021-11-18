@@ -1,0 +1,26 @@
+.validator-list {
+    margin-bottom: 3rem;
+    li {
+        padding: .5rem 1rem;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            background: $off-main;
+            a p.link {
+                color: $primary-color;
+            }
+        }
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            p {
+                @include textOverflow(1);
+            }
+            p.link {
+                font-size: .8rem;
+                transition: .3s;
+                color: rgb(129, 131, 134);
+            }
+        }
+    }
+}

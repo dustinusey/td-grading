@@ -1,0 +1,26 @@
+.side-panel .techdegree-toggle {
+    margin-bottom: 1rem;
+    .td-toggle-info-container {
+        padding: 1rem;
+        background: $off-main-accent;
+        @include flex(row, nowrap, flex-start, center);
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            background: darken($off-main-accent, 5%);
+        }
+        img {
+            max-width: 2rem;
+        }
+        p.current-td-copy {
+            @include textOverflow(1);
+            margin: auto .5rem;
+        }
+        i.fa-angle-down {
+            margin-left: auto;
+        }
+        .td-toggle-dropdown {
+            display: none;
+        }
+    }
+}

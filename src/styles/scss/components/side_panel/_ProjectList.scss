@@ -1,0 +1,17 @@
+.project-list {
+    margin: 1rem auto 3rem;
+    li {
+        padding: .40rem 1rem;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            padding-left: 2rem;
+            background: $off-main;
+        }
+        &.active {
+            padding-left: 3rem;
+            background: $off-main;
+            pointer-events: none;
+        }
+    }
+}
